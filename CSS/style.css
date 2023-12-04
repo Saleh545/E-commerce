@@ -1,0 +1,157 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .container {
+        max-width: 1144px;
+        margin: 0 auto;
+    }
+
+    .items {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 20px;
+        background-color: black;
+    }
+
+    .items a {
+        color: #fff;
+    }
+
+    .items a:hover {
+        color: goldenrod;
+    }
+
+    nav {
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav img {
+        height: 30px;
+        object-fit: cover;
+    }
+
+    .icons {
+        display: inline-flex;
+        gap: 20px;
+        position: relative;
+    }
+
+    .icons span{
+        color: #fff;
+        position: absolute;
+        right: -8px;
+        bottom: 29px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        border: 1px solid black;
+        font-size: 12px;
+        width: 15px ;
+        height: 15px;
+        text-align: center;
+    }
+    .icons span:empty{
+        display: none;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+
+    .card {
+        width: 100%;
+        border: 1px solid black;
+        text-align: center;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 10px 0 0 0;
+    }
+
+    .cart-items {
+        margin-bottom: 20px;
+        overflow: hidden;
+        box-sizing: border-box; 
+    }
+
+    .card img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .card button {
+        background-color: rgb(44, 138, 44);
+        color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .card button:hover {
+        background-color: rgb(81, 199, 81);
+        color: black;
+    }
+
+    .card span {
+        padding: 10px 0;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis;
+    }
+
+    .basket-modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #02020250;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        z-index: -1;
+        transition: all .2s ease;
+    }
+
+    .basket-modal.active {
+        opacity: 1;
+        z-index: 999;
+    }
+
+    .basket-items {
+        height: 80vh;
+        width: 800px;
+        background-color: #fff;
+        z-index: 1000;
+        padding: 30px 20px;
+        position: relative;
+        border-radius: 8px;
+    }
+
+    .basket-items i {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 30px 20px;
+        cursor: pointer;
+    }
+
+    .basket-items i:hover {
+        color: goldenrod;
+    }

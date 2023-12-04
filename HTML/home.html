@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="items">
+            <nav>
+                <a href=""><img src="../IMG/Screenshot 2023-12-02 220602.png" alt=""></a>
+                <a href="">Ana səhifə</a>
+                <a href="">Məhsullar</a>
+                <a href="">Əlaqə</a>
+            </nav>
+            <div class="icons">
+                <a href=""> <i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href=""> <i class="fa-solid fa-cart-shopping" onclick="toggleModal()"></i></a>
+                <span class="count">4</span>
+            </div>
+        </div>
+
+    </section>
+    <section class="cards">
+        <div id="loading-spinner" class="loading-spinner"></div>
+        <div class="container">
+
+            <div class="cart-items">
+                <div class="card">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="basket-modal">
+        <div class="basket-items">
+            <i class="fa-solid fa-xmark" onclick="toggleModal()"></i>
+            <h1>Shopping Cart</h1>
+
+        </div>
+    </div>
+
+
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>
